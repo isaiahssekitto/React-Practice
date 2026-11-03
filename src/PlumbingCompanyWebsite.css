@@ -1,0 +1,371 @@
+
+/* GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f7f5;
+    color: #24352e;
+    line-height: 1.6;
+}
+
+/* WEBSITE TITLE */
+
+.zuri {
+    background-color: #183c32;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 22px;
+    background-color: white;
+    border-bottom: 1px solid #e0e5e1;
+    flex-wrap: wrap;
+}
+
+.nav br {
+    display: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #24352e;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #4c9074;
+}
+
+/* HOME SECTION */
+
+#Home {
+    background: linear-gradient(
+        135deg,
+        #e2ebe5,
+        #f5f7f4
+    );
+    padding: 100px 8%;
+    text-align: center;
+}
+
+#Home h2 {
+    font-size: 48px;
+    color: #183c32;
+    margin-bottom: 20px;
+}
+
+#Home p {
+    font-size: 20px;
+    color: #53645a;
+}
+
+/* GET QUOTE BUTTON */
+
+#Home + button {
+    display: block;
+    margin: 30px auto;
+    padding: 14px 35px;
+    background-color: #245744;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#Home + button:hover {
+    background-color: #34775b;
+}
+
+/* SERVICES SECTION */
+
+#Services {
+    padding: 70px 8%;
+    background-color: #f6f7f5;
+}
+
+.divs {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.heaters,
+.Repairs {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e1e8e2;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.heaters:hover,
+.Repairs:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.heaters h3,
+.Repairs h3 {
+    color: #183c32;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.heaters p,
+.Repairs p {
+    color: #5e6c63;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* QUOTE FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e1e8e2;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+form h2 {
+    color: #183c32;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #344b3e;
+    margin-top: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd6cd;
+    border-radius: 7px;
+    background-color: #fafcf9;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #34775b;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #245744;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #34775b;
+}
+
+/* ABOUT SECTION */
+
+#About {
+    padding: 80px 8%;
+    background-color: #e5eee7;
+    text-align: center;
+}
+
+#About h2 {
+    font-size: 38px;
+    color: #183c32;
+    margin-bottom: 20px;
+}
+
+#About p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* CONTACT SECTION */
+
+#Contact {
+    padding: 80px 20px;
+    background-color: #183c32;
+    color: white;
+    text-align: center;
+}
+
+#Contact h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#Contact p {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #d5e3d9;
+}
+
+/* SUCCESS POPUP */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 20, 15, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.thankyou {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.thankyou h2 {
+    color: #183c32;
+    margin-bottom: 15px;
+}
+
+.thankyou h2:first-child {
+    font-size: 45px;
+}
+
+.thankyou p {
+    color: #607064;
+    margin-bottom: 25px;
+}
+
+.close {
+    background-color: #245744;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #34775b;
+}
+
+/* MOBILE SCREENS */
+
+@media (max-width: 768px) {
+    .zuri {
+        font-size: 26px;
+        padding: 25px 15px;
+    }
+
+    .nav {
+        gap: 20px;
+        padding: 18px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    #Home {
+        padding: 70px 20px;
+    }
+
+    #Home h2 {
+        font-size: 35px;
+    }
+
+    #Home p {
+        font-size: 17px;
+    }
+
+    #Services {
+        padding: 60px 20px;
+    }
+
+    .divs {
+        flex-direction: column;
+    }
+
+    .heaters,
+    .Repairs {
+        padding: 25px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+
+    #About,
+    #Contact {
+        padding: 60px 20px;
+    }
+
+    #About h2,
+    #Contact h2 {
+        font-size: 30px;
+    }
+
+    .thankyou {
+        padding: 35px 20px;
+    }
+}
